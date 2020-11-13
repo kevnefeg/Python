@@ -1,14 +1,9 @@
 
 def menu():
-    """
-    Función que limpia la pantalla y muestra nuevamente el menu
-    """
     print ("Selecciona una opción")
     print ("\t1 - conversion de dolar a colon")
     print ("\t2 - Conversion de colon a dolar")
     print ("\t9 - salir \n")
-
-
 while True:
     #Mostramos el menu
     menu()

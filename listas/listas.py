@@ -51,4 +51,4 @@ else:
         print("Palabras que sólo aparecen en la segunda lista:", soloSegunda)
 
         todas = comunes + soloPrimera + soloSegunda
-        print("Todas las palabras:", todas)
+        print("Todas las palabras   :", todas)
