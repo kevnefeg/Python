@@ -1,7 +1,7 @@
 numero = int(input("Dígame cuántas palabras tiene la primera lista: "))
 
 if numero < 1:
-    print("¡Imposible!")
+    print("Incorrecto")
 else:
     primera = []
     for i in range(numero):
@@ -18,7 +18,7 @@ else:
     numero2 = int(input("Dígame cuántas palabras tiene la segunda lista: "))
 
     if numero2 < 1:
-        print("¡Imposible!")
+        print("Incorrecto")
     else:
         segunda = []
         for i in range(numero2):
@@ -36,19 +36,5 @@ else:
         for i in primera:
             if i in segunda:
                 comunes += [i]
-        print("Palabras que aparecen en las dos listas:", comunes)
+        print("Palabras que aparecen en ambas listas:", comunes)
 
-        soloPrimera = []
-        for i in primera:
-            if i not in segunda:
-                soloPrimera += [i]
-        print("Palabras que sólo aparecen en la primera lista:", soloPrimera)
-
-        soloSegunda = []
-        for i in segunda:
-            if i not in primera:
-                soloSegunda += [i]
-        print("Palabras que sólo aparecen en la segunda lista:", soloSegunda)
-
-        todas = comunes + soloPrimera + soloSegunda
-        print("Todas las palabras   :", todas)
